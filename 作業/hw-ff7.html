@@ -42,6 +42,13 @@
       width: 50%;
       height: 100%;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(./main.jpg);
+      text-align: center;
+      padding-top: 10%;
+      color: #fff;
+    }
+
+    .col:nth-child(1) img {
+      width: 30%;
     }
 
     .col:nth-child(2) {
@@ -49,6 +56,18 @@
       height: 50%;
       background: #bbb;
       backdrop-filter: brightness(60%);
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: flex-end;
+      align-items: center;
+      padding-left: 30px;
+    }
+
+    .col:nth-child(2) img {
+      height: 95%;
+      object-fit: cover;
+      align-self: flex-end;
     }
 
     .col:nth-child(3) {
@@ -63,8 +82,19 @@
   <div class="container">
     <div class="row">
       <div class="col">
+        <img src="./ps4-ff7.png" alt="">
+        <h1>AVAILABLE NOW</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut a maxime soluta odio ex doloremque minima. Ad
+          facilis itaque doloremque corrupti eligendi fuga distinctio ab praesentium dolorum officiis! Vel.</p>
       </div>
-      <div class="col"></div>
+      <div class="col">
+        <div class="coltext">
+          <h1>Cloud</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore similique voluptas voluptatum quisquam
+            quaerat facilis porro repellat ab sunt, suscipit rerum.</p>
+        </div>
+        <img src="./cloud.png" alt="">
+      </div>
       <div class="col"></div>
     </div>row
   </div>
