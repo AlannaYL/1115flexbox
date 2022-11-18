@@ -50,6 +50,7 @@
     }
 
     .col {
+      position: relative;
       width: 12%;
       height: 11%;
       border: .5px solid #444;
@@ -57,14 +58,30 @@
     }
 
     .colcenter {
+      width: 98%;
       height: 11%;
       border: 1px solid #000;
-      width: 98.5%;
-    }
-
-    .col:nth-child(4) {
       position: relative;
     }
+
+    .colcenter::before {
+      content: "楚河";
+      font-size: 48px;
+      font-family: '標楷體';
+      position: absolute;
+      top: 10px;
+      left: 125px;
+    }
+
+    .colcenter::after {
+      content: "漢界";
+      font-size: 48px;
+      font-family: '標楷體';
+      position: absolute;
+      top: 10px;
+      right: 125px;
+    }
+
 
     .col:nth-child(4)::before {
       content: "";
@@ -75,6 +92,7 @@
       top: 79px;
       right: -120px;
       rotate: 42deg;
+      z-index: 1;
     }
 
     .col:nth-child(4)::after {
@@ -86,11 +104,9 @@
       top: 80px;
       right: -120px;
       rotate: 138deg;
+      z-index: 1;
     }
 
-    .col:nth-child(60) {
-      position: relative;
-    }
 
     .col:nth-child(60)::before {
       content: "";
@@ -101,6 +117,7 @@
       top: -2px;
       right: -210px;
       rotate: 138deg;
+      z-index: 1;
     }
 
     .col:nth-child(60)::after {
@@ -112,17 +129,575 @@
       top: -2px;
       right: -210px;
       rotate: 43deg;
+      z-index: 1;
+    }
+
+
+    .col:nth-child(1)::before {
+      content: "車";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(1)::after {
+      content: "馬";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+
+    .col:nth-child(3)::before {
+      content: "象";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(3)::after {
+      content: "士";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 2;
+    }
+
+
+    .col:nth-child(5)::after {
+      content: "將";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+
+    .col:nth-child(6)::before {
+      content: "士";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(6)::after {
+      content: "象";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+
+    .col:nth-child(8)::before {
+      content: "馬";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(8)::after {
+      content: "車";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(17)::before {
+      content: "包";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(23)::before {
+      content: "包";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(25)::before {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(25)::after {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 140px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(29)::before {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(29)::after {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 140px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(32)::before {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      top: -30px;
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(34)::before {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(34)::after {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 140px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(38)::before {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(38)::after {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 140px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(41)::before {
+      content: "卒";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(42)::before {
+      content: "包";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(48)::before {
+      content: "包";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(58)::before {
+      content: "車";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(58)::after {
+      content: "馬";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(215, 57, 57);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(59)::before {
+      content: "象";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(59)::after {
+      content: "士";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 150px;
+      bottom: -30px;
+      color: rgb(215, 57, 57);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 2;
+    }
+
+    .col:nth-child(61)::after {
+      content: "將";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(63)::before {
+      content: "士";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(63)::after {
+      content: "象";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(215, 57, 57);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
+    }
+
+    .col:nth-child(65)::before {
+      content: "馬";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: -30px;
+      bottom: -30px;
+      color: rgb(196, 47, 47);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+    }
+
+    .col:nth-child(65)::after {
+      content: "車";
+      width: 70px;
+      height: 70px;
+      border-radius: 50px;
+      background: #fff;
+      border: 1px solid #000;
+      position: absolute;
+      left: 60px;
+      bottom: -30px;
+      color: rgb(215, 57, 57);
+      text-align: center;
+      line-height: 70px;
+      font-family: '標楷體';
+      font-size: 42px;
+      z-index: 1;
     }
 
     @media (min-width:1440px) {
 
 
       .row1 {
-        font-size: 3.2rem;
+        font-size: 2.9rem;
       }
 
       .row2 {
-        font-size: 3.2rem;
+        font-size: 2.9rem;
       }
 
       .col:nth-child(4)::before {
@@ -131,8 +706,8 @@
         /* height: 12%; */
         border: 1px solid #444;
         position: absolute;
-        top: 99px;
-        right: -152px;
+        top: 80px;
+        right: -123px;
         rotate: 42deg;
       }
 
@@ -142,8 +717,8 @@
         /* height: 12%; */
         border: 1px solid #444;
         position: absolute;
-        top: 99px;
-        right: -152px;
+        top: 80px;
+        right: -121px;
         rotate: 138deg;
       }
 
@@ -156,7 +731,7 @@
         border: 1px solid #444;
         position: absolute;
         top: -3px;
-        right: -262px;
+        right: -210px;
         rotate: 138deg;
       }
 
@@ -167,7 +742,7 @@
         border: 1px solid #444;
         position: absolute;
         top: -3px;
-        right: -260px;
+        right: -210px;
         rotate: 42deg;
       }
     }
@@ -229,7 +804,7 @@
       <div class="col"></div>
       <div class="col"></div>
       <div class="col">
-        <!-- 8 -->
+        <!-- 40 -->
       </div>
       <div class="col"></div>
       <div class="col"></div>
@@ -239,7 +814,7 @@
       <div class="col"></div>
       <div class="col"></div>
       <div class="col">
-        <!-- 16 -->
+        <!-- 48 -->
       </div>
       <div class="col"></div>
       <div class="col"></div>
@@ -249,7 +824,7 @@
       <div class="col"></div>
       <div class="col"></div>
       <div class="col">
-        <!-- 24 -->
+        <!-- 56 -->
       </div>
       <div class="col"></div>
       <div class="col"></div>
@@ -259,7 +834,7 @@
       <div class="col"></div>
       <div class="col"></div>
       <div class="col">
-        <!-- 32 -->
+        <!-- 64 -->
       </div>
     </div>
     <div class="row2">
