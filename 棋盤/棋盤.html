@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+    }
+
+    .container {
+      width: calc(100% - 40%);
+      height: 86vh;
+      padding-top: 2%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .row1 {
+      /* -webkit-writing-mode: vertical-lr; */
+      writing-mode: vertical-lr;
+      font-size: 35px;
+      font-family: '標楷體';
+      margin-right: 3%;
+    }
+
+    .row2 {
+      /* -webkit-writing-mode: vertical-rl; */
+      writing-mode: vertical-rl;
+      font-size: 35px;
+      font-family: '標楷體';
+      margin-left: 3%;
+    }
+
+    .row {
+      width: calc(100% - 50%);
+      height: calc(100% - 20%);
+      border: 1px solid #000;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      padding: 5%;
+    }
+
+    .col {
+      width: calc(100% - 88%);
+      height: calc(100% - 89%);
+      border: .5px solid #444;
+      background: #fff;
+    }
+
+    .colcenter {
+      height: 11%;
+      border: 1px solid #000;
+      width: 98.5%;
+    }
+
+    .col:nth-child(4) {
+      position: relative;
+    }
+
+    .col:nth-child(4)::before {
+      content: "";
+      width: calc(100% + 190%);
+      /* height: 12%; */
+      border: 1px solid #444;
+      position: absolute;
+      top: 61px;
+      right: -92px;
+      rotate: 44deg;
+    }
+
+    .col:nth-child(4)::after {
+      content: "";
+      width: calc(100% + 190%);
+      /* height: 12%; */
+      border: 1px solid #444;
+      position: absolute;
+      top: 61px;
+      right: -91px;
+      rotate: 136deg;
+    }
+
+    @media (min-width:1800px) {
+
+
+      .row1 {
+        font-size: 3.2rem;
+      }
+
+      .row2 {
+        font-size: 3.2rem;
+      }
+
+      .col:nth-child(4)::before {
+        content: "";
+        width: calc(100% + 49%);
+        /* height: 12%; */
+        border: 1px solid #444;
+        position: absolute;
+        top: 45px;
+        right: -23px;
+        rotate: 45deg;
+      }
+
+      .col:nth-child(4)::after {
+        content: "";
+        width: calc(100% + 49%);
+        /* height: 12%; */
+        border: 1px solid #444;
+        position: absolute;
+        top: 45px;
+        right: -110px;
+        rotate: 135deg;
+      }
+
+      .col:nth-child(12) {
+        position: relative;
+      }
+
+      .col:nth-child(12)::before {
+        content: "";
+        width: calc(100% + 49%);
+        /* height: 12%; */
+        border: 1px solid #444;
+        position: absolute;
+        top: 41px;
+        right: -23px;
+        rotate: 134deg;
+      }
+
+      .col:nth-child(12)::after {
+        content: "";
+        width: calc(100% + 49%);
+        /* height: 12%; */
+        border: 1px solid #444;
+        position: absolute;
+        top: 43px;
+        right: -111px;
+        rotate: 45deg;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row1">
+      棋盤裡，車無輪馬無韁，叫聲將軍提防提防
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 8 -->
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 16 -->
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 24 -->
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 32 -->
+      </div>
+      <div class="colcenter"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 8 -->
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 16 -->
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 24 -->
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col">
+        <!-- 32 -->
+      </div>
+    </div>
+    <div class="row2">
+      圖書裡，龍不吟虎不嘯，小小書僮可笑可笑
+    </div>
+  </div>
+</body>
+
+</html>
